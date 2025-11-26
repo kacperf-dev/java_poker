@@ -7,11 +7,7 @@ public record Card(Rank rank, Suit suit) implements Comparable<Card> {
      * */
     @Override
     public int compareTo(Card other) {
-        int rankComparison = Integer.compare(this.rank.getPower(), other.rank.getPower());
-        if (rankComparison == 0) {
-            return this.suit.compareTo(other.suit);
-        }
-        return rankComparison;
+        return Integer.compare(this.rank.getPower(), other.rank.getPower());
     }
 
     /**
