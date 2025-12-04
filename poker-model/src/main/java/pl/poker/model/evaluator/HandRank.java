@@ -8,7 +8,7 @@ public enum HandRank {
     STRAIGHT("Strit"),
     FLUSH("Kolor"),
     FULL_HOUSE("Full"),
-    FOUR_OF_A_KINF("Kareta"),
+    FOUR_OF_A_KIND("Kareta"),
     STRAIGHT_FLUSH("Poker"),
     ROYAL_FLUSH("Poker Królewski");
 

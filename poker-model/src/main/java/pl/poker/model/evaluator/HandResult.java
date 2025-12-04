@@ -19,8 +19,8 @@ public record HandResult(HandRank rank, List<Card> kickers) implements Comparabl
 
         for  (int i = 0; i < kickers.size(); i++) {
             int powerComparison = Integer.compare(
-                    this.kickers.get(i).rank().getPower(),
-                    other.kickers.get(i).rank().getPower()
+                this.kickers.get(i).rank().getPower(),
+                other.kickers.get(i).rank().getPower()
             );
 
             if (powerComparison != 0) {
